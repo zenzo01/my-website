@@ -2,5 +2,12 @@
 <title>Hidden Gem</title>
 <body>
 </body>
-<audio src="lol.mp3" autoplay loop hidden muted></audio>
+<audio id="myAudio" src="lol.mp3" loop hidden></audio>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("myAudio");
+    audio.play().catch(error => console.log("Autoplay blocked:", error));
+  });
+</script>
+
 </html>
