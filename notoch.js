@@ -1,5 +1,2 @@
-<script>
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
-</script>
+const audio = document.querySelector('audio');
+audio.muted = false;
